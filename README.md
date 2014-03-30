@@ -21,16 +21,19 @@ Proposed Core functionality:
 Modules will have an address and a corresponding role.   A simple messaging setup should allow a few bits
 to delegate any task and value from the core to the slave.  
 
-Proposed modules for V1:
+In Progress: 
+	SuperIO
+	- RGB LED Matrix (standard matrix or sparkfun rgb button pad) - TLC5940 + 74hc164 + tlc59213 for led  and 74hc165 for keypad in  
+      I'd like to look at the monome protocol for communicating with it since thats already defined, but the device should be able to be independant of pc! 
+	- Digital In (button / encoders) 
+	- Digital Out (led / trigger / etc)
 
-- Analog In  (rot ary pots, audio, cv, etc)  -- todo: select mux
-- Analog Out  (i2c dac, audio / cv)   -- Max525/5250? 
-- Digital In (button / encoders)  - 595 shift register maybe, not a fan tho, would like a key decoder w/ interrupts
-- Digital out (led, trigger, etc) - could use SR, meh..   Using TLC5940 for Matrix, why not do that? 
-- RGB LED Matrix (standard matrix or sparkfun rgb button pad) - TLC5940 and 164/165 for keypad? or again, key decoder  
-- Keypad decoding - same
-- - I2c text and graphical lcds - these are probably going to wind up being attached to the master, but i've had i2c led related problems in some of my other sketches
 
+Other Proposed modules for V1:
+	- Analog In  (rot ary pots, audio, cv, etc)  -- todo: select mux
+	- Analog Out  (i2c dac, audio / cv)   -- Max525/5250?  
+	- I2c text and graphical lcds - these are probably going to wind up being attached to the master, but i've had i2c led related problems in some of my other sketches
+	- communication with other platforms (arm / propeller / etc) 
 
 
 
