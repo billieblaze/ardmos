@@ -12787,6 +12787,9 @@ diameter 5 mm, grid 2.54 mm</description>
 <segment>
 <pinref part="IC3" gate="A" pin="SER"/>
 <wire x1="114.3" y1="-86.36" x2="96.52" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PB4(MISO)"/>
+<wire x1="73.66" y1="12.7" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$98" class="0">
@@ -13250,6 +13253,15 @@ diameter 5 mm, grid 2.54 mm</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="45.72" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
 <label x="157.48" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="IC2" gate="A" pin="RCK"/>
+<wire x1="144.78" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="109.22" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
